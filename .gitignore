@@ -5,6 +5,14 @@ build/
 dist/
 wheels/
 *.egg-info
+.idea/
 
 # Virtual environments
 .venv
+
+db/
+data/
+outputs/
+_unsloth_sentencepiece_temp/
+llama.cpp/
+qwen-rouling/

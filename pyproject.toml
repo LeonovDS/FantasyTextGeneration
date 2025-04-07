@@ -4,4 +4,19 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+  "langchain-chroma",
+  "langchain>=0.3.10",
+  "langchain-community>=0.3.10",
+  "langchain-text-splitters>=0.3.2",
+  "langchain-ollama",
+  "langchain-huggingface",
+  "langchain-unstructured",
+  "unstructured>=0.16.9",
+  "tqdm>=4.67.1",
+  "ollama==0.4.4",
+  "unsloth>=2024.12.4",
+]
+
+[dependency-groups]
+dev = ["jupyter", "jupyter-client", "notebook"]

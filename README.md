@@ -1,4 +1,4 @@
-# Langchain text generation
+# Fantasy text generation
 
 ## Задача
 
@@ -14,3 +14,20 @@
 - fine tuning
 
 Для нас интересны последние два и их комбинация.
+
+## Что можно запускать
+
+`calculate_embeddings.py` - предподсчет эмбеддингов для ускорения работы
+`finetuning.py` - finetuning Qwen с помощью Unsloth (почти полностью скопированный из примера код)
+`generate_dataset.py` - генерация датасета для finetuning на базе текста книг
+`ft_llm.py` - генерация с помощью RAG + finetuning
+`llm_only.py` - генерация с помощью чистого Qwen
+`rag_only.py` - генерация с помощью RAG
+`search_similar.py` - просто семантический поиск для дебага
+
+Почему не пользовался jupyter - не помню
+
+## Результаты
+
+Обучал и тестировал на Гарри Поттере
+Примеры вводов и генерации лежат в папке results
